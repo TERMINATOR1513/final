@@ -45,9 +45,9 @@ function draw() {
   background(bg);  
   if(keyDown("D")){
     player.changeAnimation("player1",player_stand);
-    //player.x += 10;
+    player.x += 10;
   }else if(keyDown("D") === false){
-    player.changeAnimation("player0",playeridle);
+    player.changeAnimation("player1",player_stand);
   }
   if(keyDown("A")){
     player.x -= 10;
